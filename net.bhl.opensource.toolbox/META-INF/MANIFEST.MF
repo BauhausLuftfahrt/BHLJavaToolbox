@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Toolbox
+Bundle-SymbolicName: net.bhl.opensource.toolbox
+Bundle-Version: 1.0.0.qualifier
+Bundle-Vendor: Bauhaus Luftfahrt e.V.
+Automatic-Module-Name: net.bhl.opensource.toolbox
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Export-Package: net.bhl.opensource.toolbox.io,
+ net.bhl.opensource.toolbox.math,
+ net.bhl.opensource.toolbox.math.gaussian,
+ net.bhl.opensource.toolbox.math.random,
+ net.bhl.opensource.toolbox.math.vector,
+ net.bhl.opensource.toolbox.time

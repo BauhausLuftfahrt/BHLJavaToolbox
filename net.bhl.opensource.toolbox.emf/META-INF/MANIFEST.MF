@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Emf
+Bundle-SymbolicName: net.bhl.opensource.toolbox.emf
+Bundle-Version: 1.0.0.qualifier
+Bundle-Vendor: Bauhaus Luftfahrt e.V.
+Automatic-Module-Name: net.bhl.opensource.toolbox.emf
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Require-Bundle: org.eclipse.emf.common,
+ org.eclipse.emf.ecore,
+ net.bhl.opensource.toolbox
+Export-Package: net.bhl.opensource.toolbox.emf
