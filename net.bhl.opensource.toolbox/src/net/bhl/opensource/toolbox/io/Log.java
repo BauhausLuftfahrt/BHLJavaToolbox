@@ -87,8 +87,15 @@ public interface Log {
 	 * @param result
 	 */
 	static void printInfoLine(String content, String result) {
-		start(content);
-		System.out.println(TAB + result);
+
+		if (result == null) {
+			printStart(content, false);
+			System.out.println();
+
+		} else {
+			printStart(content, true);
+			System.out.println(TAB + result);
+		}
 	}
 
 	/**
