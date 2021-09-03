@@ -35,4 +35,23 @@ public interface FilePicker {
 
 		return Optional.of(picker.getSelectedFile());
 	}
+
+	/**
+	 * Open a JFileChooser and get a folder.
+	 *
+	 */
+	static Optional<File> getFolder(String startPath) {
+
+		final JFileChooser picker = new JFileChooser(startPath);
+		picker.setMultiSelectionEnabled(false);
+		picker.setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY);
+		picker.setAcceptAllFileFilterUsed(false);
+		picker.setDialogTitle("Please choose a folder as input.");
+
+		if (picker.showOpenDialog(null) == JFileChooser.CANCEL_OPTION) {
+			return Optional.empty();
+		}
+
+		return Optional.of(picker.getSelectedFile());
+	}
 }

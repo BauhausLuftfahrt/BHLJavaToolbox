@@ -24,6 +24,11 @@ public interface Transformator {
 
 		try {
 
+			if (content.contains("D") || content.contains("F")) {
+				throw new NumberFormatException(
+						"This script does not transform strings with an d or f after a double value into a double. E.g. 1F is not a double of 1 but a '1F' string!");
+			}
+
 			Double value = Double.parseDouble(content);
 
 			if (BHLMath.isInteger(value)) {
