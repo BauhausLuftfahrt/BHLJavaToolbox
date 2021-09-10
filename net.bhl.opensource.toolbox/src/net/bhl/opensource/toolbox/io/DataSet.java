@@ -45,6 +45,10 @@ public class DataSet extends HashMap<String, Object> {
 		this.name = Optional.of(name);
 	}
 
+	public void setName(String name) {
+		this.name = name == null ? Optional.empty() : Optional.of(name);
+	}
+
 	/**
 	 * @return
 	 */

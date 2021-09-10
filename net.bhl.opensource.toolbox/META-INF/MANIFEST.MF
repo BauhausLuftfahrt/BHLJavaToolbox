@@ -11,4 +11,5 @@ Export-Package: net.bhl.opensource.toolbox.io,
  net.bhl.opensource.toolbox.math.gaussian,
  net.bhl.opensource.toolbox.math.random,
  net.bhl.opensource.toolbox.math.vector,
+ net.bhl.opensource.toolbox.string,
  net.bhl.opensource.toolbox.time
