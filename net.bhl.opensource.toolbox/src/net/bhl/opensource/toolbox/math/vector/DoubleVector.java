@@ -108,7 +108,7 @@ public class DoubleVector {
 	 * @param z the z value
 	 */
 	public final void setZ(double z) {
-		yValue = z;
+		zValue = z;
 	}
 
 	@Override
