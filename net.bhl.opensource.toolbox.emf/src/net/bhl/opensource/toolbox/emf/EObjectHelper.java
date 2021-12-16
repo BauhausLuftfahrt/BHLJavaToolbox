@@ -67,7 +67,6 @@ public interface EObjectHelper {
 	 *         parent Element
 	 */
 
-	@Deprecated
 	static <T extends EObject> Optional<T> getFirstChild(EObject parent, Class<T> clazz) {
 		return Optional.of(getChildren(parent, clazz).get(0));
 	}
