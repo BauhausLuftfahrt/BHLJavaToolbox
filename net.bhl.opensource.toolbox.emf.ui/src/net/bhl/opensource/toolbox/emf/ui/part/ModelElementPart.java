@@ -233,6 +233,6 @@ public class ModelElementPart extends BHLPart {
 
 	@Override
 	public String getURI() {
-		return "bundleclass://net.bhl.toolbox.emf.ui/net.bhl.toolbox.emf.ui.e4.part.ModelElementPart";
+		return "bundleclass://net.bhl.opensource.toolbox.emf.ui/net.bhl.toolbox.opensource.emf.ui.part.ModelElementPart";
 	}
 }
