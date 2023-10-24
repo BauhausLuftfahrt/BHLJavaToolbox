@@ -128,10 +128,10 @@ public abstract class BHLModelManager {
 
 					newSelection.add(copy);
 
-					setPosition(copy, new DoubleVector(getPosition(eo).getX() + INITIAL_SIZE,
-							getPosition(eo).getY() + INITIAL_SIZE, 0));
-
 					((EList<EObject>) container).add(copy);
+
+					setPosition(copy,
+							new DoubleVector(getPosition(eo).getX() + INITIAL_SIZE, getPosition(eo).getY(), 0));
 
 					ECollections.sort((EList<EObject>) container, Comparator.comparing(e -> getPosition(e).getX()));
 				}
