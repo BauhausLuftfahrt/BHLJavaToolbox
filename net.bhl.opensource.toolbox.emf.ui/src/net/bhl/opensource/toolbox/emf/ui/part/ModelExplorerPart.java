@@ -166,6 +166,6 @@ public class ModelExplorerPart extends BHLPart {
 
 	@Override
 	public String getURI() {
-		return "bundleclass://net.bhl.opensource.toolbox.emf.ui/net.bhl.toolbox.opensource.emf.ui.part.ModelExplorerPart";
+		return "bundleclass://net.bhl.opensource.toolbox.emf.ui/net.bhl.opensource.toolbox.emf.ui.part.ModelExplorerPart";
 	}
 }
